@@ -1,0 +1,101 @@
+------------------------------------------------------------------------------ INTRO
+
+
+Intro to Sound Synthesis
+
+What we'll cover:
+- like
+- three
+- topics
+
+(should I mention that what we're doing is additive synth?)
+
+Start with a sine wave
+(show oscilliscope, play sound)
+It has a pitch, or frequency
+This is what it would sound like at a higher pitch -ex-
+or a lower pitch -ex-
+It also has an amplitude
+Right now, our sound's amplitude is --
+Naturally, a lower amplitude like -- would sound like this -ex-
+(maybe mention diff between ampl and loudness?
+maybe mention dB is a ratio?)
+
+(Potentially mention: we're looking at a sine wave rn.
+Other common waveforms to use include triangle, saw, square/pulse
+(w/ examples). Each of these have had the same frequency and
+amplitude, but a different ~timbre~. We're gonna hop back to
+sine waves rn, but ----)
+(Maybe mention spelling vs pronunciation, plus french etymology
+of timbre)
+
+Okay, so ("with freq and amp", if we've gone off into tangents)
+we have everything we need to keep going.
+
+------------------------------------------------------------------------------ BUILDSQUARE
+
+Now, let's take a look at this same wave on a different graph.
+Right now we're looking at a graph that shows amplitude as a
+function of time - that is to say, if we give our function a time,
+it will tell us what amplitude will be playing.
+We can also represent this sound with a "frequency domain" graph,
+where we keep the amplitude along the y-axis but replace the x-axis
+(our domain) with frequency instead of time.
+This is a sine wave with a frequency of --, so we get--
+(switch)
+this. Very exciting.
+(maybe something about how sine waves are "pure" - this sound
+doesn't just sound pure, it's also pretty pure and simple to
+work with in synthesis, too.)
+
+So let's switch back to a (is it correct to say time-domain?)
+graph.
+We're gonna try playing two sine waves at once
+(add a higher partial to our sine wave, maybe the original
+"higher pitch" sine)
+When we play two sounds at the same time, we add their waves
+(do I need to step people through adding the waves?)
+If we switch back to our frequency domain, we can see it just got
+(gasp) a little bit more interesting
+What if we make it even more interesting?
+(add a couple more sounds)
+What does our time domain graph look like now?
+(switch)
+Wow! That looks suspiciously more and more like our squarwe wave
+from earlier.
+It might be hard to hear it that way, because we added each sine
+wave one at a time, but if we pause for a few seconds
+(pause)
+then start up again, we can recognise this as a square wave.
+
+(Then explain how this is a fourier transform?)
+
+If we want a close approximation to a square wave, we can just
+keep adding sine waves at higher frequencies
+(examples)
+
+------------------------------------------------------------------------------ BUILDSAW
+
+We can also approximate triangle and sawtooth waves this way, too
+(saw example)
+
+((what's the meaning of this? bc DAC plays, like, steps, but
+something interpolated from sample to sample, right?
+or does this just help us understand how to get frequencies from
+the time domain graphs we normally see?
+or i guess this is definitely at least a helpful intro to
+additive synthesis))
+
+------------------------------------------------------------------------------ TOSPECT?
+
+(then I guess we can show how we can compact the frequency domain
+to a single line with varying colors, then stack those to form a
+spectrograph)
+
+------------------------------------------------------------------------------ SUBTRACT?
+
+(then on to subtractive synthesis?)
+(then maybe go on to explain envelopes and how we can apply that
+to different formants in add. synth. to get things like brass
+sounds?)
+(or go straight to FM synth?)

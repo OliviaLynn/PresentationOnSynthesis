@@ -1,0 +1,119 @@
+------------------------------------------------------------------------------ INTRO
+
+
+Intro to Sound Synthesis
+
+What we'll cover:
+- like
+- three
+- topics
+
+(should I mention that what we're doing is additive synth?)
+
+Start with a sine wave
+It has a frequency, and an amplitude
+Frequency is a lot like pitch,
+  except that pitch is relative--a social construct, if you will--and frequency is based on definite numbers
+This is what our wave would sound like at a lower frequency
+  and at higher frequencies
+If you notice, I've been working with multiples of two here
+  this frequency is exactly half of the one before it
+  and this is half of the one before that one
+  When you double or half a frequency, you move by an octave
+  But, we can also move by other amounts, like so
+Out wave also has an amplitude
+  Right now, we're working with an amp of 1 dB
+  a lower amplitude would sound, as you might guess, softer
+  And back to 1
+Two things worth noting when talking about amplitude are loudness and decibels
+  We can think of amplitudes lot like how loud a sound is,
+  but technically loudness is the way we perceive amplitude
+  So, two waves with the same amplitude might have different loudnesses
+  based on their frequencies and/or their timbres
+Decibels are the unit we use for amplitude
+  a decibel is technically a ratio, and not an absolute amount
+  So, we can say "two feet" and that means something around this--
+  But "two decibels" would be something closer to "twice as powerful"
+  (although, as an aside, decibels work on logarithmic scales, so 2dB would actually be more equivalent to "10 times")
+  So, it has less meaning if we haven't already defined some sound as our reference point to build ratios off of
+  But surely this is impractical!
+  How can we talk to other people about amplitudes if it be like this?
+  the dB is often used to quantify SPL, or Sound Pressure Levels, relative to a 0dB reference
+  and we can set 0dB to the "threshold of hearing", the SPL that's juuuust high enough for us to hear
+
+So we've just covered frequency and amplitude
+  It's good to note that sounds also have a timbre, too
+  This here is a sine wave, but if we change it to a triangle wave...
+  it has a different timbre
+  And a square wave, or pulse wave
+
+Okay, so ("with freq and amp", if we've gone off into tangents)
+we have everything we need to keep going.
+
+------------------------------------------------------------------------------ BUILDSQUARE
+
+Now, let's take a look at this same wave on a different graph.
+Right now we're looking at a graph that shows amplitude as a
+function of time - that is to say, if we give our function a time,
+it will tell us what amplitude will be playing.
+We can also represent this sound with a "frequency domain" graph,
+where we keep the amplitude along the y-axis but replace the x-axis
+(our domain) with frequency instead of time.
+This is a sine wave with a frequency of --, so we get--
+(switch)
+this. Very exciting.
+(maybe something about how sine waves are "pure" - this sound
+doesn't just sound pure, it's also pretty pure and simple to
+work with in synthesis, too.)
+
+So let's switch back to a (is it correct to say time-domain?)
+graph.
+We're gonna try playing two sine waves at once
+(add a higher partial to our sine wave, maybe the original
+"higher pitch" sine)
+When we play two sounds at the same time, we add their waves
+(do I need to step people through adding the waves?)
+If we switch back to our frequency domain, we can see it just got
+(gasp) a little bit more interesting
+What if we make it even more interesting?
+(add a couple more sounds)
+What does our time domain graph look like now?
+(switch)
+Wow! That looks suspiciously more and more like our squarwe wave
+from earlier.
+It might be hard to hear it that way, because we added each sine
+wave one at a time, but if we pause for a few seconds
+(pause)
+then start up again, we can recognise this as a square wave.
+
+(Then explain how this is a fourier transform?)
+
+If we want a close approximation to a square wave, we can just
+keep adding sine waves at higher frequencies
+(examples)
+
+------------------------------------------------------------------------------ BUILDSAW
+
+We can also approximate triangle and sawtooth waves this way, too
+(saw example)
+
+((what's the meaning of this? bc DAC plays, like, steps, but
+something interpolated from sample to sample, right?
+or does this just help us understand how to get frequencies from
+the time domain graphs we normally see?
+or i guess this is definitely at least a helpful intro to
+additive synthesis))
+
+------------------------------------------------------------------------------ TOSPECT?
+
+(then I guess we can show how we can compact the frequency domain
+to a single line with varying colors, then stack those to form a
+spectrograph)
+
+------------------------------------------------------------------------------ SUBTRACT?
+
+(then on to subtractive synthesis?)
+(then maybe go on to explain envelopes and how we can apply that
+to different formants in add. synth. to get things like brass
+sounds?)
+(or go straight to FM synth?)
